@@ -1,0 +1,75 @@
+/* 
+ * Standard HTML elements first 
+*/
+
+html {
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: #f9f9f9;    
+}
+
+body {
+  font: 13px/1.6em 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 60%;
+}
+
+/*
+ * Page Header
+*/
+header, div#header {
+  background-color: black;
+  padding: 1.75em 0;
+  color: white;
+  margin-bottom: 10px;
+}
+
+hgroup, div#sitedetails { text-align: center; }
+
+hgroup h1, hgroup h2, div#sitedetails h1, div#sitedetails h2 {
+  font-family: Georgia, cursive;
+  font-weight: normal;
+}
+
+hgroup h2, div#sitedetails h2 {
+  font-style: italic;
+}
+
+nav ul, div#nav ul {
+  margin: 0;
+  padding: 0 1em 0 0;
+  text-align: center;
+}
+
+nav li, div#nav li {
+  display: inline;
+  padding-left: 0.5em;
+}
+
+/*
+ * Footer
+ */
+footer, div#footer, div.footer {
+  text-align: center;
+  font-size: 11px;
+}
+
+/*
+ * Articles
+*/
+article, div.article {
+  margin-bottom: 10px;
+  background-color: beige;
+  padding: 10px;
+  border: solid thin brown;
+}
+
+article header, div.article div.header {
+  background-color: inherit; /* Override properties of header above */
+  color: black;
+}
+
+article footer, div.article div.footer {
+  text-align: left;
+}

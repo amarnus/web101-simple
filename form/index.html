@@ -1,0 +1,45 @@
+<!-- http://dev.w3.org/html5/spec/syntax.html#the-doctype -->
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>My Awesome Web Page</title>
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="container">
+        <header>
+          <hgroup>
+            <h1 id="sitename">Web form</h1>
+          </hgroup>
+        </header>
+        <div id="main">
+          <form method="POST" action="validate.php">
+	          <div class="item">
+		          Name: <input type="text" name="name" required>
+		        </div>
+		        <div class="item">
+	            Comment: <textarea name="comment" required></textarea>
+	          </div>
+	          <div class="item">
+	            Faculty: 
+	              <select name="faculty">
+		              <option selected>SoC</option>
+		              <option>FoE</option>
+		              <option>Other</option>
+		            </select>
+		        </div>
+		        <div class="item">
+		          Gender: 
+		            <input name="gender" type="radio" value="1" checked> Male
+		            <input name="gender" type="radio" value="2"> Female
+		        </div>
+		        <div class="item">
+			        <input type="submit" value="Save">
+			      </div>
+	        </form>
+        </div>
+        <footer></footer>
+      </div>
+   </body>
+</html>
